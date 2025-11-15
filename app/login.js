@@ -74,7 +74,8 @@ async function fazerLoginCliente() {
 
     try {
         // OAuth2PasswordRequestForm espera "username" e "password"
-        const res = await fetch("http://localhost:8000/api/auth/clientes/login", {
+        // const res = await fetch("http://localhost:8000/api/auth/clientes/login", {
+        const res = await fetch("https://synchrogest-app.onrender.com/api/auth/clientes/login", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: new URLSearchParams({ username: email, password: senha })
@@ -120,7 +121,8 @@ async function fazerCadastroCliente() {
     }
 
     try {
-        const res = await fetch("http://localhost:8000/api/clientes/", {
+        // const res = await fetch("http://localhost:8000/api/clientes/", {
+        const res = await fetch("https://synchrogest-app.onrender.com/api/clientes/", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ nome, email, senha, telefone, endereco, cep, cidade, pais })

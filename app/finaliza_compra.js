@@ -29,7 +29,8 @@ async function finalizarCompra() {
     const total = itens.reduce((acc, item) => acc + (item.preco_unitario * item.quantidade), 0);
 
     try {
-        const response = await fetch("http://localhost:8000/api/compras/", {
+        // const response = await fetch("http://localhost:8000/api/compras/", {
+        const response = await fetch("https://synchrogest-app.onrender.com/api/compras/", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -67,7 +68,8 @@ async function fazerLogin() {
         formData.append('username', email);
         formData.append('password', senha);
 
-        const res = await fetch("http://localhost:8000/api/auth/clientes/login", {
+        // const res = await fetch("http://localhost:8000/api/auth/clientes/login", {
+        const res = await fetch("https://synchrogest-app.onrender.com/api/auth/clientes/login", {
             method: 'POST',
             headers: {
                 "Content-Type": "application/x-www-form-urlencoded"
@@ -124,7 +126,8 @@ async function fazerCadastroCliente() {
     }
 
     try {
-        const res = await fetch("http://localhost:8000/api/public/clientes/", {
+        // const res = await fetch("http://localhost:8000/api/public/clientes/", {
+        const res = await fetch("https://synchrogest-app.onrender.com/api/public/clientes/", {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json"
