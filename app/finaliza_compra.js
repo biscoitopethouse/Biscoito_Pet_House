@@ -68,8 +68,8 @@ async function fazerLogin() {
         formData.append('username', email);
         formData.append('password', senha);
 
-        // const res = await fetch("http://localhost:8000/api/auth/clientes/login", {
-        const res = await fetch("https://synchrogest-app.onrender.com/api/auth/clientes/login", {
+        const res = await fetch("http://localhost:8000/api/auth/clientes/login", {
+        // const res = await fetch("https://synchrogest-app.onrender.com/api/auth/clientes/login", {
             method: 'POST',
             headers: {
                 "Content-Type": "application/x-www-form-urlencoded"

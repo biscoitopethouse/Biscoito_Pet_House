@@ -91,8 +91,8 @@
             // const produtos = await res.json();
 
             //===================================
-            // const res = await fetch("http://localhost:8000/api/produtos", {
-            const res = await fetch("https://synchrogest-app.onrender.com/api/produtos", {
+            const res = await fetch("http://localhost:8000/api/produtos", {
+            // const res = await fetch("https://synchrogest-app.onrender.com/api/produtos", {
             //===================================
                 method: "GET",
                 headers: { "Content-Type": "application/json" }

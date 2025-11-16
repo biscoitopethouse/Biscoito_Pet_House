@@ -4,6 +4,7 @@ function loadPage(page) {
         case 'home': loadHome(); break;
         case 'produtos': loadProdutos(); break;
         case 'carrinho': loadCarrinho(); break;
+        case 'pagamentos': loadPagamentos();break;
         case 'login': loadLogin(); break;
         default: loadHome();
     }

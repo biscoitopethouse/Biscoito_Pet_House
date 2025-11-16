@@ -41,8 +41,8 @@ async function cadastrarCliente() {
     try {
 
 
-        const response = await fetch("https://synchrogest-app.onrender.com/api/clientes", {
-        // const response = await fetch("http://localhost:8000/api/clientes/", {
+        // const response = await fetch("https://synchrogest-app.onrender.com/api/clientes", {
+        const response = await fetch("http://localhost:8000/api/clientes/", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ nome, email, telefone, endereco })

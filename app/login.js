@@ -121,8 +121,8 @@ async function fazerCadastroCliente() {
     }
 
     try {
-        // const res = await fetch("http://localhost:8000/api/clientes/", {
-        const res = await fetch("https://synchrogest-app.onrender.com/api/clientes/", {
+        const res = await fetch("http://localhost:8000/api/clientes/", {
+        // const res = await fetch("https://synchrogest-app.onrender.com/api/clientes/", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ nome, email, senha, telefone, endereco, cep, cidade, pais })
