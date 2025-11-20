@@ -33,17 +33,14 @@ O objetivo principal deste projeto é demonstrar a **interação de um frontend 
 O arquivo `app.js` contém a variável:
 
 ```javascript
-const API_BASE_URL = 'https://seu-backend.onrender.com';
+const API_BASE_URL = 'https://synchrogest-app.onrender.com';
 ```
 
-**Para que o site funcione corretamente com o seu projeto FastAPI, você deve:**
-
-1. **Substituir** a URL `https://synchrogest-app.onrender.com"` pela URL pública do seu backend hospedado no Render.
-2. **Garantir que o CORS** (Cross-Origin Resource Sharing) esteja configurado corretamente no seu backend FastAPI para permitir requisições vindas do domínio onde este site estático será hospedado (ex: GitHub Pages ou outro serviço).
-3. **Implementar os Endpoints** necessários no seu FastAPI:
+1. **O CORS** (Cross-Origin Resource Sharing) está configurado no backend FastAPI para permitir requisições vindas do domínio acima.
+3. **Foram implementado os Endpoints**:
     - `/login` (POST): Recebe credenciais e retorna o token JWT (`access_token`).
     - `/produtos` (GET): Retorna a lista de produtos.
-    - `/compras` (POST): (Opcional, para finalizar a compra real) Recebe os itens do carrinho e o token JWT.
+    - `/compras` (POST): (Para finalizar a compra) Recebe os itens do carrinho e o token JWT.
 
 ## Visualização
 
