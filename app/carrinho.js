@@ -18,7 +18,7 @@ window.loadCarrinho = async function() {
     if (carrinho.length === 0) {
         contentArea.innerHTML += `
             <div class="carrinho_vazio">
-                <img src="/assets/images/cão_farejador.png" alt="Cachorro farejando" class="empty-cart-img">
+                <img src="/assets/images/heros/cão_farejador.png" alt="Cachorro farejando" class="empty-cart-img">
                 <p>Seu carrinho está vazio. 
                     <a href="#" onclick="loadPage('produtos')">Adicionar produtos</a>
                 </p>

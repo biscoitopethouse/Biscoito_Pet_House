@@ -70,8 +70,8 @@ async function finalizarPagamento(carrinho, token) {
     const total = itens.reduce((acc, item) => acc + (item.preco_unitario * item.quantidade), 0);
 
     try {
-        // const response = await fetch("https://synchrogest-app.onrender.com/api/pagamentos/", {
-        const response = await fetch("http://localhost:8000/api/pagamentos/", {
+        // const response = await fetch("http://localhost:8000/api/pagamentos/", {
+            const response = await fetch("https://synchrogest-app.onrender.com/api/pagamentos/", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

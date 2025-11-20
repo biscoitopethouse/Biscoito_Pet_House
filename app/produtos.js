@@ -85,15 +85,8 @@
         content.innerHTML = '<h2>Carregando Produtos...</h2>';
 
         try {
-            // -- FUTURO: buscar do backend com fetchAPI('/produtos') --
-            // Exemplo:
-            // const res = await fetchAPI('/produtos');
-            // const produtos = await res.json();
-
-            //===================================
-            const res = await fetch("http://localhost:8000/api/produtos", {
-            // const res = await fetch("https://synchrogest-app.onrender.com/api/produtos", {
-            //===================================
+            // const res = await fetch("http://localhost:8000/api/produtos", {
+            const res = await fetch("https://synchrogest-app.onrender.com/api/produtos", {
                 method: "GET",
                 headers: { "Content-Type": "application/json" }
             });

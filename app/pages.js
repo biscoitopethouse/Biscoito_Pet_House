@@ -20,7 +20,7 @@ function loadHome() {
                     <a href="#" onclick="loadPage('produtos')" class="btn btn-primary">Ver Produtos</a>
                 </div>
                 <div class="hero-image">
-                    <img src="assets/images/cão-e-gato.jpg" alt="Cachorro e gato feliz">
+                    <img src="assets/images/heros/cão-e-gato.jpg" alt="Cachorro e gato feliz">
                 </div>
             </div>
         </section>
